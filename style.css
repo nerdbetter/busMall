@@ -1,0 +1,50 @@
+header{
+  height: 200px;
+  width: 100%;
+  max-width: 1500px;
+  background-color: skyblue;
+}
+body{
+  height: 500px;
+  width:100%;
+  max-width: 1500px;
+  background-color: grey;
+}
+.logo{
+  float: left;
+  width:30%;
+  height: 200px;
+}
+.logo img{
+  height: 100%;
+  width: 100%;
+}
+
+.results{
+  float: left;
+  heght: 475px;
+  width: 20%;
+  background-color: skyblue;
+}
+nav ul{
+  float: right;
+}
+nav ul li{
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+}
+.imageSelect{
+  height: 500px;
+  width:100%;
+}
+.image1{
+  float: left;
+}
+.image2{
+  float: left;
+}
+.image3{
+  float: right;
+}

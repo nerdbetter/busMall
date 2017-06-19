@@ -3,33 +3,38 @@
 <html>
   <head>
     <title>Bus Catalog</title>
-    <link href="choc-pizza.css" rel= "stylesheet"/>
+    <link href="style.css" rel= "stylesheet"/>
   </head>
   <body>
     <header>
-      <img />
+      <div class='logo'>
+        <img src ='images/logo.png'/>
+      </div>
       <nav>
-        <ul>
-          <li>
+        <ul style='list-style: none;'>
+          <li><a href='ind.html'>Home</a>
           </li>
-          <li>
+          <li><a href='products.html'>Products</a>
           </li>
-          <li>
+          <li><a href='about.html'>About</a>
           </li>
-          <li>
+          <li><a href='contact.html'>Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <section class='results'>
+      <h2>Results</h2>
     </section>
     <div class='imageSelect'>
-      <img />
-      <img />
-      <img />
+      <label><input class = 'image1' type='radio' name='image1' ><img src = 'images/boots.jpg' /></label>
+      <label><input class = 'image1' type='radio' name='image2' ><img src = 'images/chair.jpg' /></label>
+      <label><input class = 'image3' type='radio' name='image3' ><img src = 'images/scissors.jpg' /></label>
+      <!-- <label><input type='radio' name='image4' ><img src = 'images/water_can.jpg' /></label>
+      <label><input type='radio' name='image5' ><img src = 'images/wine_glass.jpg' /></label> -->
     </div>
     <div class ='voteButton'>
-      <button>Vote!</button>
+      <input type='submit' value='Vote!'>
     </div>
     <div class='description'>
       <p>
