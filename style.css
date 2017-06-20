@@ -79,24 +79,24 @@ a:visited{
   visibility: hidden;
   position: absolute;
 }
-.image1:hover{
+#image1:hover{
   transform: scale(1.1)
 }
-.image2:hover{
+#image2:hover{
   transform: scale(1.1)
 }
-.image3:hover{
+#image3:hover{
   transform: scale(1.1)
 }
-.image1{
+#image1{
   float:left;
   width: 30%;
 }
-.image2{
+#image2{
   float:left;
   width: 30%;
 }
-.image3{
+#image3{
   float:left;
   width: 30%;
 
