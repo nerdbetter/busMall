@@ -3,68 +3,122 @@ header{
   width: 100%;
   max-width: 1500px;
   background-color: skyblue;
+  margin: auto;
+  position: relative;
+  border-bottom: 5px solid black;
 }
 body{
-  height: 500px;
   width:100%;
   max-width: 1500px;
-  background-color: grey;
+  background-color: #E2231A;
+  margin: auto;
+}
+.bodyWrap{
+  background-color: white;
 }
 .clear{
   clear: both;
 }
 .logo{
   float: left;
-  width:30%;
-  height: 200px;
+  width:25%;
+  padding-top: 10px;
+  padding-left: 15px;
+
 }
 .logo img{
   height: 100%;
   width: 100%;
 }
-
-.results{
-  width: 20%;
-  background-color: skyblue;
-}
 nav ul{
   float: right;
+  padding-right: 20px;
+  margin-top: 148px;
+
 }
 nav ul li{
+  font-size: 29px;
   display: inline-block;
+  border-top-left-radius:20%;
+  border-top-right-radius:20%;
+  border: 5px solid black;
+  border-bottom: none;
+  background-color: white;
+  font-family: 'Palanquin Dark', sans-serif;
 }
 a{
   text-decoration: none;
+  padding: 0px 10px;
+}
+a:hover{
+  color: yellow;
+}
+a:link{
+  color:black;
+}
+a:visited{
+  color: black;
+}
+.results{
+  float: left;
+  width: 20%;
+  background-color: skyblue;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 .imageSelect{
-  width: 60%;
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  float:right;
 }
 .imageSelect label input{
   visibility: hidden;
   position: absolute;
 }
-label > input + img{
-  cursor:pointer;
-  border:2px solid transparent;
+.image1:hover{
+  transform: scale(1.1)
 }
-label > input:checked + img{
-  border:2px solid #f00;
+.image2:hover{
+  transform: scale(1.1)
+}
+.image3:hover{
+  transform: scale(1.1)
 }
 .image1{
-  float: left;
+  float:left;
   width: 30%;
-  height: 100%;
 }
 .image2{
-  float: left;
+  float:left;
   width: 30%;
-  height: 100%;
 }
 .image3{
-  float: right;
+  float:left;
   width: 30%;
-  height: 100%;
+
 }
-.voteButton{
-  width:60%;
+input[type=submit]{
+  clear: both;
+  padding: 25px 500px 25px 500px;
+  margin: auto 50px auto 50px;
+
+}
+label > input + img{
+  cursor:pointer;
+}
+label > input:checked + img{
+  border:5px solid black;
+}
+.description{
+  clear: both;
+  padding: 15px 50px;
+  font-family: 'Volkhov', serif;
+  font-size: 20px;
+  background-color: skyblue;
+  border-top: 5px solid black;
+
 }
