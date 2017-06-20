@@ -79,27 +79,13 @@ a:visited{
   visibility: hidden;
   position: absolute;
 }
-#image1:hover{
+label img:hover{
   transform: scale(1.1)
 }
-#image2:hover{
-  transform: scale(1.1)
-}
-#image3:hover{
-  transform: scale(1.1)
-}
-#image1{
-  float:left;
-  width: 30%;
-}
-#image2{
-  float:left;
-  width: 30%;
-}
-#image3{
-  float:left;
-  width: 30%;
 
+#image1, #image2, #image3{
+  float:left;
+  width: 30%;
 }
 input[type=submit]{
   clear: both;

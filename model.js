@@ -44,17 +44,15 @@ function randomImage() {
 function changeImage(){
   if (totalClicks < 25) {
     totalClicks++;
-    getRandomImage();
+    randomImage();
   } else {
     submit.style.display = 'block';
-    getRandomImage();
+    randomImage();
   }
 }
-image1.addEventListener('submit', randomImage);
-image1.addEventListener('submit', changeImage);
-image2.addEventListener('submit', randomImage);
-image2.addEventListener('submit', changeImage);
-image3.addEventListener('submit', randomImage);
-image3.addEventListener('submit', changeImage);
-
+function formEvents(event){
+  event.preventDefault();
+  changeImage();
+};
 randomImage();
+document.getElementsByClassName('imageSelect')[0].addEventListener('submit', formEvents);
