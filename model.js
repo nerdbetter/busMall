@@ -3,7 +3,7 @@
 var productArray = [];
 var shown = 0;
 var totalClicks = 0;
-var vote = [];
+var vote = 0;
 var firstImage = document.getElementById('image1');
 var secondImage = document.getElementById('image2');
 var thirdImage = document.getElementById('image3');
@@ -69,9 +69,34 @@ function changeImage(){
 }
 function getVote(){
   var userVote = event.target.querySelector('input:checked');
-  vote.push(this);
-  console.log(vote);
-}
+  if ( userVote.value === '0' ){
+    productArray.map(function(product){
+      if (product.name === firstImage.name){
+        product.vote++;
+      }
+      console.log(product);
+    });
+  }
+  else if (userVote.value === '1'){
+    productArray.map(function(product){
+      if (product.name === secondImage.name){
+        product.vote++;
+      }
+      console.log(product);
+    });
+  }
+  else if (userVote.value === '2') {
+    productArray.map(function(product){
+      if (product.name === thirdImage.name){
+        product.vote++;
+      }
+      console.log(product);
+    });
+  }
+  else{
+    console.log('noVote');
+  }
+};
 function formEvents(event){
   event.preventDefault();
   getVote();
