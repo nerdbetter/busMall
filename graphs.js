@@ -13,6 +13,14 @@ var productVotes = new Chart(document.getElementById('productVotes').getContext(
     options:{
       responsive: true,
       maintainAspectRatio: false,
+      scales: {
+        xAxes: [{
+          stacked: true
+        }],
+        yAxes: [{
+          stacked: true
+        }]
+      }
     }
   }
 });
