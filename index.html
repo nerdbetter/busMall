@@ -13,7 +13,7 @@
       </div>
       <nav>
         <ul style='list-style: none;'>
-          <li><a href='index.html'>Home</a>
+          <li class='activeTab'><a href='index.html'>Home</a>
           </li>
           <li><a href='products.html'>Products</a>
           </li>
@@ -27,13 +27,15 @@
     <div class='bodyWrap'>
       <section class='results'>
         <h2>Results</h2>
-        <canvas id='productVotes' class='resrict-size'></canvas>
+        <canvas id='productVotes' height='300px'></canvas>
       </section>
       <form class='imageSelect'>
         <label><input type='radio' name='product' ><img id = 'image1'/></label>
         <label><input type='radio' name='product' ><img id = 'image2'/></label>
         <label><input type='radio' name='product' ><img id = 'image3'/></label>
-        <input class ='submitButton' type='submit' value='Vote!'>
+        <div class='buttonContainer'>
+          <input class ='submitButton' type='submit' value='Vote!'>
+        </div>
       </form>
       <div class='description'>
         <p>
