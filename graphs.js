@@ -26,17 +26,20 @@ function chartBuild(){
         data: totalGraph,
         backgroundColor: '#87CEEB',
       }],
-      options:{
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-          xAxes: [{
-            stacked: true
-          }],
-          yAxes: [{
-            stacked: true
-          }]
-        }
+    },
+    options:{
+      responsive: true,
+      legend:{
+        display: false
+      },
+      maintainAspectRatio: false,
+      scales: {
+        xAxes: [{
+          stacked: true
+        }],
+        yAxes: [{
+          stacked: true
+        }]
       }
     }
   });
