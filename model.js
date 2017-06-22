@@ -4,6 +4,9 @@ var productArray = [];
 var shown = 0;
 var totalClicks = 0;
 var vote = 0;
+var votedGraph = [];
+var totalGraph = [];
+var names = [];
 var firstImage = document.getElementById('image1');
 var secondImage = document.getElementById('image2');
 var thirdImage = document.getElementById('image3');
@@ -63,7 +66,8 @@ function changeImage(){
     randomImage();
   }
   else{
-    submit.style.display = 'none';
+    chartBuild();
+    input.submit.style.display = 'none';
     randomImage();
   }
 }
