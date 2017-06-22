@@ -34,16 +34,18 @@ nav ul{
   float: right;
   padding-right: 20px;
   margin-top: 148px;
-
 }
-nav ul li{
+.activeTab{
+  background-color: white;
+}
+nav li{
   font-size: 29px;
   display: inline-block;
   border-top-left-radius:20%;
   border-top-right-radius:20%;
   border: 5px solid black;
   border-bottom: none;
-  background-color: white;
+  background-color: gray;
   font-family: 'Palanquin Dark', sans-serif;
 }
 a{
@@ -53,16 +55,13 @@ a{
 a:hover{
   color: yellow;
 }
-a:link{
+a:link, a:visited{
   color:black;
-}
-a:visited{
-  color: black;
 }
 .results{
   float: left;
   width: 20%;
-  background-color: skyblue;
+  background-color: white;
   font-family: 'Palanquin Dark', sans-serif;
   font-size: 20px;
   margin-top: 15px;
@@ -82,16 +81,29 @@ a:visited{
 label img:hover{
   transform: scale(1.1)
 }
-
 #image1, #image2, #image3{
-  float:left;
+  float:right;
   width: 30%;
+  margin: 5px;
 }
 input[type=submit]{
   clear: both;
-  padding: 25px 500px 25px 500px;
-  margin: auto 50px auto 50px;
-
+  padding: 0px 480px;
+  font-family: 'Palanquin Dark', sans-serif;
+  background-color: skyblue;
+  font-size: 25px;
+  border: 5px solid black;
+  border-radius: 10%;
+}
+input[type=submit]:hover{
+  background-color: black;
+  color: white;
+}
+.buttonContainer{
+  clear: both;
+  height: 100px;
+  position:relative;
+  padding: 25px 0px 25px 85px;
 }
 label > input + img{
   cursor:pointer;
@@ -106,5 +118,4 @@ label > input:checked + img{
   font-size: 20px;
   background-color: skyblue;
   border-top: 5px solid black;
-
 }
