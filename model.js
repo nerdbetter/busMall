@@ -4,8 +4,6 @@ var productArray = [];
 var shown = 0;
 var totalClicks = 0;
 var vote = 0;
-var votedGraph = [];
-var totalGraph = [];
 var names = [];
 var firstImage = document.getElementById('image1');
 var secondImage = document.getElementById('image2');
@@ -26,6 +24,11 @@ var chair = new Product('chair', 'chair.jpg');
 var scissors = new Product('scissors', 'scissors.jpg');
 var waterCan = new Product('waterCan', 'water_can.jpg');
 var wineGlass = new Product('wineGlass', 'wine_glass.jpg');
+var bag = new Product('bag', 'bag.jpg');
+var banana = new Product ('banana', 'banana.jpg');
+var bathroom = new Product ('bathroom', 'bathroom.jpg');
+var breakfast = new Product ('breakfast', 'breakfast.jpg');
+var bubblegum = new Product ('bubblegum', 'bubblegum.jpg');
 
 function randomizer () {
   return Math.floor(Math.random() * productArray.length);
@@ -61,13 +64,16 @@ function randomImage() {
 
 };
 function changeImage(){
-  if (totalClicks < 25) {
+  if (totalClicks < 24) {
     totalClicks++;
     randomImage();
   }
   else{
+    $('form').fadeOut('slow');
+    $('.results').fadeIn('slow').css('display','block');
+    //document.body.className = 'show-results';
     chartBuild();
-    input.submit.style.display = 'none';
+    //document.getElementsByClassName('submitButton')[0].setAttribute('style', 'display:none');
     randomImage();
   }
 }
