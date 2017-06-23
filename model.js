@@ -64,14 +64,16 @@ function randomImage() {
 
 };
 function changeImage(){
-  if (totalClicks < 3) {
+  if (totalClicks < 24) {
     totalClicks++;
     randomImage();
   }
   else{
-    document.body.className = 'show-results';
+    $('form').fadeOut('slow');
+    $('.results').fadeIn('slow').css('display','block');
+    //document.body.className = 'show-results';
     chartBuild();
-    document.getElementsByClassName('submitButton')[0].setAttribute('style', 'display:none');
+    //document.getElementsByClassName('submitButton')[0].setAttribute('style', 'display:none');
     randomImage();
   }
 }
