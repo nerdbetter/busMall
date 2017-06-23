@@ -64,7 +64,7 @@ function randomImage() {
 
 };
 function changeImage(){
-  if (totalClicks < 2) {
+  if (totalClicks < 24) {
     totalClicks++;
     randomImage();
   }
