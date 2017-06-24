@@ -12,6 +12,7 @@ As a < type of user >, I want < some goal > so that < some reason >.
 2.As a user I want a pleasant experience so that the market test doesn't feel like a chore.
 3.as a user I want a description and picture of the item so I know what I am voting for.
 4.As a user I want a graphic representation of my votes so it easier to observe the data.
+5.As a user I want the page to feel interactive with some animations so I know what I am clicking on.
 
 
 <h2>As a Developer</h2>
